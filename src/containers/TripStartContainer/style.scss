@@ -35,8 +35,8 @@
       position: absolute;
       top: 0px;
       right: 0px;
-      width: 130%;
-      height: 130%;
+      width: 110%;
+      height: 110%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -106,26 +106,6 @@
       }
     }
   }
-
-  .clock {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/trip/clockSprite.png');
-    background-repeat: no-repeat;
-    &:nth-of-type(1) {
-      animation: rotate 30s linear infinite reverse;
-    }
-    &:nth-of-type(2) {
-      animation: rotate 15s linear infinite;
-    }
-    &:nth-of-type(3) {
-      animation: rotate 15s linear infinite reverse;
-    }
-  }
-
   .numbers {
     position: absolute;
     top: 0;
@@ -283,27 +263,19 @@
 }
 
 // $desktopHD | $desktop | $tablet | $mobile
-@media screen and (max-width:768px) {
+@media screen and (max-width:1023px) {
   #ct_trip_start_container {
     transform: scale(0.9);
     .clocks {
-      transform: translate3d(-50%, -50%, 0) scale(0.7);
+      transform: translate3d(-50%, -50%, 0) scale(0.9);
       margin-top: 25px;
     }
   }
 }
-
-@media screen and (max-width:768px) { 
+@media screen and (max-width:767px) {
   #ct_trip_start_container {
-    transform: scale(0.7);
     .clocks {
-      transform: translate3d(-50%, -50%, 0) scale(0.8);
-    }
-    > footer {
-      position: fixed;
-      width: 100%;
-      left: 0;
-      bottom: -10px;
+      transform: translate3d(-50%, -50%, 0) scale(0.6);
     }
   }
 }

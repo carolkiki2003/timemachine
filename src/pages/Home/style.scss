@@ -1,1 +1,195 @@
 @import '../../assets/normalize.scss';
+.cover{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height:850px;
+    overflow: hidden;
+    background-image: url(../../assets/cover_bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    .star_logo{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        background-image: url(../../assets/star_logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 38px;
+        margin: 20px;
+    }
+    .start_button{
+        position: absolute;
+        left: 50%;
+        bottom:25px;
+    }
+    .wrap{
+        >div{
+        padding-bottom:200px;
+        }
+    }
+}
+.content_bg{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #0a222e; /* Old browsers */
+    background: -moz-linear-gradient(top, #0a222e 1%, #0f4152 63%, #0a222e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #0a222e 1%,#0f4152 63%,#0a222e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #0a222e 1%,#0f4152 63%,#0a222e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a222e', endColorstr='#0a222e',GradientType=0 ); /* IE6-9 */
+    &:before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background-image: url(../../assets/content_bg.png);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 80%;
+        opacity: .2;
+    }
+    .content{
+        width: 100%;
+        margin-top: 850px;
+        .wrap{
+            section{
+                width: 100%;
+                display: flex;
+                .intro_img{
+                    width: 50%;
+                    float: left; 
+                    .circle_bg{
+                        width: 300px;
+                        height: 300px;
+                        background-image: url(../../assets/item01.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain; 
+                    }
+                }
+                .intro{
+                    width: 50%;
+                    float: right;
+                    .title_img{
+                        width: 90%;
+                        height:25%;
+                        background-image: url(../../assets/title01.png);
+                        background-position: left center;
+                        background-repeat: no-repeat;
+                        background-size: contain;  
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 32px;
+                        text-align: left;
+                        color: white;
+                    }
+                }
+            }
+            >div{
+                position: relative;
+                .start_button{
+                    position: relative;
+                    top: 0;
+                    left: 50%;
+                }   
+            }
+        }
+    }
+}
+/* 共用元件 */
+.wrap{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.start_button{
+    transform: translateX(-50%) scale(1);
+    transform-origin: center;
+    display:block;
+    width: 200px;
+    height:100px;
+    background-image: url(../../assets/button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition:all .5s ;
+    &:hover{
+        background-image: url(../../assets/button_hover.png);
+        transform:translateX(-50%) scale(1.1) ;
+    }
+}
+@media screen and (max-width:1023px){
+    .cover{
+        height:700px; 
+        .wrap{
+            >div{
+                padding-bottom:100px;
+            }
+        }
+        .start_button{
+            bottom:8px;
+        }
+    }
+    .content_bg{
+        .content{
+            margin-top: 700px;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .cover{
+        height:600px; 
+        .wrap{
+            >div{
+                padding-bottom:0;
+            }
+        }
+        .start_button{
+            bottom:15px;
+        }
+    }
+    .content_bg{
+        .content{
+            margin-top: 600px;
+        }
+    }
+    .start_button{
+        width: 150px;
+        height: 83px;
+    }
+}
+@media screen and (max-width:375px){
+    .cover{
+        height:400px; 
+        .start_button{
+            bottom:4px;
+        }
+    }
+    .content_bg{
+        .content{
+            margin-top: 400px;
+        }
+    }
+    .start_button{
+        width: 150px;
+        height: 83px;
+    }
+}
