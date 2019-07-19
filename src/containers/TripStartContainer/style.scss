@@ -274,8 +274,11 @@
 }
 @media screen and (max-width:767px) {
   #ct_trip_start_container {
+    >.logo{
+      margin:0 0 0 0 ;
+    }
     .clocks {
-      transform: translate3d(-50%, -50%, 0) scale(0.6);
+      transform: translate3d(-50%, -50%, 0) scale(0.5);
     }
   }
 }

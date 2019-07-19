@@ -1,6 +1,7 @@
 <script>
   // @ is an alias to /src
   import TripStartContainer from '@/containers/TripStartContainer'
+  import SocialMediaGroup from '@/components/SocialMediaGroup'
 /* eslint-disable */
   export default {
     name: 'home',
@@ -9,7 +10,8 @@
       }
     },
     components: {
-       TripStartContainer 
+       TripStartContainer,
+       SocialMediaGroup 
     },
     computed: {
     },
