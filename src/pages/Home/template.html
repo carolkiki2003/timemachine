@@ -19,7 +19,7 @@
     <div class="content_bg">
         <div class="content">
             <div class="wrap">
-                <section class="section1">
+                <section class="section1" @click="section1" :class="{show: section1Class}">
                     <div class="intro_img">
                         <div class="circle_bg"></div>
                     </div>
@@ -28,7 +28,7 @@
                         <p>從個人頁進入太空艙，前往任務地圖；也可切換房間上傳自己的照片、或更換不同的造型。</p>
                     </div>
                 </section>
-                <section class="section2">
+                <section class="section2" :class="{show: section2Class}">
                     <div class="intro_img">
                         <div class="circle_bg">
                             <img>
@@ -39,7 +39,8 @@
                         <p>每日登入可獲得不同能量獎勵，透過探索職業任務，探索達100%，即可得到職業達人的專屬裝備。</p>
                     </div>
                 </section>
-                <section class="section3">
+                <div class="line1" :class="{leftlineshow: section2Class}"></div>
+                <section class="section3"  :class="{show: section3Class}">
                     <div class="intro_img">
                         <div class="circle_bg">
                             <img>
@@ -50,6 +51,7 @@
                         <p>你完成探索的職業越多，擁有的配件就越多，可自由創造「獨一無二」個人化造型！</p>
                     </div>
                 </section>
+                <div class="line2" :class="{rightlineshow: section3Class}"></div>
                 <div>
                     <a
                         class="start_button"
