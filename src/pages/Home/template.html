@@ -2,64 +2,69 @@
     <div class="float_button">
         <SocialMediaGroup/>
     </div>
-    <div class="cover">
-        <a
-            class="star_logo"
-            href="https://star.104.com.tw/landing"
-        ></a>
-        <div class="wrap">
-            <TripStartContainer></TripStartContainer>
-            <div class="step"></div>
-        </div>
-        <a
-            class="start_button"
-            href="https://pse.is/EGRC2"
-        ></a>
-    </div>
-    <div class="content_bg">
-        <div class="content">
+    <div class="bg">
+        <div class="cover">
+            <a
+                class="star_logo"
+                href="https://star.104.com.tw/landing"
+            ></a>
             <div class="wrap">
-                <section class="section1" @click="section1" :class="{show: section1Class}">
-                    <div class="intro_img">
-                        <div class="circle_bg"></div>
-                    </div>
-                    <div class="intro">
-                        <div class="title_img" title="個人化太空艙"></div>
-                        <p>從個人頁進入太空艙，前往任務地圖；也可切換房間上傳自己的照片、或更換不同的造型。</p>
-                    </div>
-                </section>
-                <section class="section2" :class="{show: section2Class}">
-                    <div class="intro_img">
-                        <div class="circle_bg">
-                            <img>
-                        </div>
-                    </div>
-                    <div class="intro">
-                        <div class="title_img" title="職業任務地圖"></div>
-                        <p>每日登入可獲得不同能量獎勵，透過探索職業任務，探索達100%，即可得到職業達人的專屬裝備。</p>
-                    </div>
-                </section>
-                <div class="line1" :class="{leftlineshow: section2Class}"></div>
-                <section class="section3"  :class="{show: section3Class}">
-                    <div class="intro_img">
-                        <div class="circle_bg">
-                            <img>
-                        </div>
-                    </div>
-                    <div class="intro">
-                        <div class="title_img" title="造型自由配"></div>
-                        <p>你完成探索的職業越多，擁有的配件就越多，可自由創造「獨一無二」個人化造型！</p>
-                    </div>
-                </section>
-                <div class="line2" :class="{rightlineshow: section3Class}"></div>
-                <div>
-                    <a
-                        class="start_button"
-                        href="https://pse.is/EGRC2"
-                    ></a>
+                <TripStartContainer></TripStartContainer>
+                <h1>天賦時光機</h1>
+                <div class="step">
+                    <h2>透過遊戲與職業達人問答互動</h2>
+                    <h2>每天登入獲得能量，持續探索獲得個人裝備</h2>
+                    <h2>輕鬆認識職業，瞭解自己的方向</h2>
                 </div>
-            </div> 
+            </div>
+            <a
+                class="down_button"
+                @click="go_down"
+            ></a>
         </div>
-        <div class="bottom_bg"></div>
+        <div class="content">
+                <div class="wrap">
+                    <section class="section1" @click="section1" :class="{show: section1Class}">
+                        <div class="intro_img">
+                            <div class="circle_bg"></div>
+                        </div>
+                        <div class="intro">
+                            <div class="title_img" title="個人化太空艙"></div>
+                            <p>從個人頁進入太空艙，前往任務地圖；也可切換房間上傳自己的照片、或更換不同的造型。<a href="https://pse.is/ECESY">啟動</a></p>
+                        </div>
+                    </section>
+                    <section class="section2" :class="{show: section2Class}">
+                        <div class="intro_img">
+                            <div class="circle_bg">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="intro">
+                            <div class="title_img" title="職業任務地圖"></div>
+                            <p>每日登入可獲得不同能量獎勵，透過探索職業任務，探索達100%，即可得到職業達人的專屬裝備。<a href="https://pse.is/ECESY">啟動</a></p>
+                        </div>
+                    </section>
+                    <div class="line1" :class="{leftlineshow: section2Class}"></div>
+                    <section class="section3"  :class="{show: section3Class}">
+                        <div class="intro_img">
+                            <div class="circle_bg">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="intro">
+                            <div class="title_img" title="造型自由配"></div>
+                            <p>你完成探索的職業越多，擁有的配件就越多，可自由創造「獨一無二」個人化造型！<a href="https://pse.is/ECESY">啟動</a></p>
+                        </div>
+                    </section>
+                    <div class="line2" :class="{rightlineshow: section3Class}"></div>
+                    <div>
+                        <a
+                            class="start_button"
+                            href="https://pse.is/ECESY"
+                        ></a>
+                    </div>
+                </div> 
+        </div>
+        <!-- <div class="bottom_bg"></div> -->
     </div>
 </div>

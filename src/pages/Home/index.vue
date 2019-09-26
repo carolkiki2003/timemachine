@@ -66,6 +66,9 @@
         if(this.wh + this.scrollTop > this.section3()){
           this.section3Class = true
         }
+      },
+      go_down(){
+        scrollTo({ top: this.section1(), behavior: 'smooth' })
       }
     },
     mounted() {

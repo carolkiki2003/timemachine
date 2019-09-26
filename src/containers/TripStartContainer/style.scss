@@ -1,12 +1,12 @@
 #ct_trip_start_container {
   > .logo {
-    margin: -50px 0 0 0;
+    margin: 0 0 0 0;
     position: relative;
     opacity: 0;
     animation: show 2s forwards;
     > img {
       display: block;
-      max-width: 100%;
+      max-width: 85%;
       margin: 0 auto;
       position: relative;
       z-index: 1;
@@ -268,11 +268,21 @@
     transform: scale(0.9);
     .clocks {
       transform: translate3d(-50%, -50%, 0) scale(0.9);
-      margin-top: 25px;
+      // margin-top: 25px;
     }
   }
 }
 @media screen and (max-width:767px) {
+  #ct_trip_start_container {
+    >.logo{
+      margin:0 0 0 0 ;
+    }
+    .clocks {
+      transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+  }
+}
+@media screen and (max-width:500px) {
   #ct_trip_start_container {
     >.logo{
       margin:0 0 0 0 ;
